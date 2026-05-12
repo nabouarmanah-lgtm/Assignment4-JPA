@@ -1,0 +1,84 @@
+/* ROOT */
+
+.root {
+
+    -fx-background-color: #f5f7fa;
+
+    -fx-font-family: "Segoe UI";
+
+}
+
+
+/* BUTTONS */
+
+.button {
+
+    -fx-background-color: #3498db;
+
+    -fx-text-fill: white;
+
+    -fx-font-size: 13px;
+
+    -fx-background-radius: 6;
+
+    -fx-cursor: hand;
+
+}
+
+.button:hover {
+
+    -fx-background-color: #2980b9;
+
+}
+
+
+/* COMBOBOX */
+
+.combo-box {
+
+    -fx-pref-width: 90;
+
+}
+
+
+/* DATE PICKER */
+
+.date-picker {
+
+    -fx-pref-width: 160;
+
+}
+
+
+/* TABLE */
+
+.table-view {
+
+    -fx-border-color: #dcdcdc;
+
+    -fx-background-radius: 5;
+
+}
+
+.table-view .column-header {
+
+    -fx-background-color: #3498db;
+
+}
+
+.table-view .column-header .label {
+
+    -fx-text-fill: white;
+
+    -fx-font-weight: bold;
+
+}
+
+
+/* TABLE ROW */
+
+.table-row-cell:selected {
+
+    -fx-background-color: #d6eaf8;
+
+}

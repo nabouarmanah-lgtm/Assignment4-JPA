@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controllers.EnrollmentController">
+
+    <center>
+
+        <VBox spacing="10" alignment="CENTER">
+
+            <HBox spacing="10">
+
+                <ComboBox fx:id="studentsCombobox"/>
+
+                <ComboBox fx:id="coursesCombobox"/>
+
+            </HBox>
+
+            <HBox spacing="10">
+
+                <DatePicker fx:id="enrollDate"/>
+
+            </HBox>
+
+            <HBox spacing="10">
+
+                <Button text="Add"
+                        onAction="#addHandle"/>
+
+                <Button text="Update"
+                        onAction="#updateHandle"/>
+
+                <Button text="Delete"
+                        onAction="#deleteHandle"/>
+
+                <Button text="View"
+                        onAction="#viewHandle"/>
+
+            </HBox>
+
+            <TableView fx:id="table">
+
+                <columns>
+
+                    <TableColumn text="Enroll ID"
+                                 fx:id="enrollIdTC"/>
+
+                    <TableColumn text="Student ID"
+                                 fx:id="studentIdTC"/>
+
+                    <TableColumn text="Course ID"
+                                 fx:id="courseIdTC"/>
+
+                    <TableColumn text="Enroll Date"
+                                 fx:id="enrollDateTC"/>
+
+                </columns>
+
+            </TableView>
+
+        </VBox>
+
+    </center>
+
+</BorderPane>
